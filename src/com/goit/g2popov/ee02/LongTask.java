@@ -20,7 +20,7 @@ public class LongTask implements Task<Long> {
         @Override
         public void execute() {
                 result = var+1;
-                System.out.println("Task from"+this.getClass()+" has been executed with the result: "+result);
+                System.out.println("Task from "+this.getClass()+" has been executed with the result: "+result);
         }
 
         @Override

@@ -10,9 +10,12 @@ public class App {
 
         public static void main(String[] args) throws Exception {
                 App app = new App();
-                Task<Long> task = new LongTask(5L);
                 List<Task<? extends Number>> list = new ArrayList<Task<? extends Number>>();
-                list.add(task);
+                list.add(new LongTask(5L));
+                list.add(new LongTask(63L));
+                list.add(new LongTask(8L));
+                list.add(new LongTask(12L));
+                list.add(new LongTask(10L));
                 app.test(list);
         }
 
@@ -23,6 +26,10 @@ public class App {
                         numberExecutor.addTask(intTask);
                 }
                 numberExecutor.addTask(new LongTask(10L), new NumberValidator());
+                numberExecutor.addTask(new LongTask(8L), new NumberValidator());
+                numberExecutor.addTask(new LongTask(20L), new NumberValidator());
+                numberExecutor.addTask(new LongTask(9L), new NumberValidator());
+                numberExecutor.addTask(new LongTask(4L), new NumberValidator());
 
                 numberExecutor.execute();
 
