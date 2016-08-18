@@ -34,7 +34,7 @@ public class ExecutorImpl implements Executor<Number> {
                 } else {
                         invalidResults.add(result);
                 }
-                addTask((Task<Number>) task);
+                //addTask((Task<Number>) task);
         }
 
         @Override

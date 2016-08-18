@@ -13,9 +13,9 @@ public class App {
                 List<Task<? extends Number>> list = new ArrayList<Task<? extends Number>>();
                 list.add(new LongTask(5L));
                 list.add(new LongTask(63L));
-                list.add(new LongTask(8L));
-                list.add(new LongTask(12L));
-                list.add(new LongTask(10L));
+                list.add(new LongTask(88L));
+                list.add(new LongTask(75L));
+                list.add(new LongTask(91L));
                 app.test(list);
         }
 
