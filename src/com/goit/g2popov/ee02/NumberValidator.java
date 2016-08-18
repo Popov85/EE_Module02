@@ -5,7 +5,7 @@ package com.goit.g2popov.ee02;
  */
 public class NumberValidator implements Validator<Number> {
         @Override
-        public boolean isValid(Number result) {
-                return false;
+        public boolean isValid(Number number) {
+                return (number.doubleValue() > 5 && number.doubleValue() <= 10);
         }
 }
